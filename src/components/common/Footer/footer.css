@@ -1,0 +1,11 @@
+.footer {
+  background-color: #181d38;
+  color: #fff;
+  height: 100%;
+  padding: 6px 73px;
+  margin-top: 90px;
+}
+
+.footer-container {
+  margin: 47px auto;
+}
