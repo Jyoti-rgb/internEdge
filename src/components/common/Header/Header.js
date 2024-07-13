@@ -29,13 +29,13 @@ export default function Header() {
                 <Link to="/how-to-work">How-to-work</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/testimonial">Testimonials</Link>
               </li>
               <li>
                 <Link to="/contact">Contact Us</Link>
               </li>
               <li>
-                <Link to="/SignIn">Sign Up</Link>
+                <Link to="/signup">Sign Up</Link>
               </li>
             </ul>
           </div>

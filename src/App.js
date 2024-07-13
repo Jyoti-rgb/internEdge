@@ -7,8 +7,9 @@ import Footer from "./components/common/Footer/Footer";
 import Internship from "./components/pages/Internship";
 import HowToWork from "./components/pages/HowToWork";
 import Contact from "./components/pages/Contact";
-import Blog from "./components/pages/Blog";
 import SignUp from "./components/pages/SignUp";
+// import Testimonial from "./components/pages/Testimonial/Testimonial";
+import Testimonial from "./components/pages/Testimonial/Testimonial";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             <Route path="/internship" element={<Internship />} />
             <Route path="/how-to-work" element={<HowToWork />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/signup" element={<SignUp />} />
           </Routes>
         </div>

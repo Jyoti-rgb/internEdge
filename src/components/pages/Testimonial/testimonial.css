@@ -1,0 +1,41 @@
+.page-header {
+  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+    url("../carousel-1.jpg");
+  height: 55vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-carousel {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+}
+.testimonial-head {
+  text-align: center;
+  margin-top: 40px;
+}
+.tm-heading {
+  position: relative;
+  top: 145px;
+}
+.flex-carousel {
+  position: relative;
+  top: 120px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  visibility: hidden;
+}
+.card-img {
+  margin-bottom: 60px;
+}
+.card-img img {
+  border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #2974e4;
+}

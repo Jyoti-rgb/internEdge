@@ -3,9 +3,22 @@
   --light: #f0fbfc;
   --dark: #181d38;
 }
-.carousal-img {
+
+.homeCarousel-img {
   width: 100%;
-  background: rgba(24, 29, 56, 0.7);
+}
+.carousel-inner {
+  height: 100vh;
+}
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 114.3vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the rgba values as needed */
+  z-index: 1;
 }
 .carousal-box {
   background-color: black;

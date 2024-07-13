@@ -8,21 +8,25 @@ export default function Home() {
   return (
     <>
       <div className="carousel-container">
-        <div className="carousal-box"></div>
         <Carousel>
           <Carousel.Item>
+            <img
+              className="homeCarousel-img"
+              src="./images/carousel-1.jpg"
+              alt=""
+            />
             <Carousel.Caption className="caption">
               <h1 className="carousal-heading">
                 Welcome to Internedge - Your Pathway to Professional Success
               </h1>
-              {/* <p className="carousal-p">
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-              </p> */}
             </Carousel.Caption>
-            <img src="./images/carousel-1.jpg" alt="" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="./images/carousel-2.jpg" alt="" />
+            <img
+              className="homeCarousel-img"
+              src="./images/carousel-2.jpg"
+              alt=""
+            />
             <Carousel.Caption>
               <h1 className="carousal-heading">
                 Enhance Your Skills and Network
@@ -37,7 +41,7 @@ export default function Home() {
           </Carousel.Item>
           <Carousel.Item className="caroual-item">
             <img
-              className="carousal-img"
+              className="homeCarousel-img"
               src="./images/carousel-1.jpg"
               alt=""
             />
