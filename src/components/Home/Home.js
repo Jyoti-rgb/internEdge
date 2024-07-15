@@ -3,10 +3,16 @@ import "./home.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import skills from "./skills";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home - Internedge Website</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="carousel-container">
         <Carousel>
           <Carousel.Item>

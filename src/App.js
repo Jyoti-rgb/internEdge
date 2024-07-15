@@ -6,10 +6,9 @@ import Home from "./components/Home/Home";
 import Footer from "./components/common/Footer/Footer";
 import Internship from "./components/pages/Internship";
 import HowToWork from "./components/pages/HowToWork";
-import Contact from "./components/pages/Contact";
 import SignUp from "./components/pages/SignUp";
-// import Testimonial from "./components/pages/Testimonial/Testimonial";
 import Testimonial from "./components/pages/Testimonial/Testimonial";
+import Contact from "./components/pages/Contact/Contact";
 
 function App() {
   return (

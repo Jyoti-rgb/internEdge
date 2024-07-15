@@ -5,6 +5,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
 }
 
 .container-carousel {
@@ -16,7 +18,7 @@
   text-align: center;
   margin-top: 40px;
 }
-.tm-heading {
+.page-heading {
   position: relative;
   top: 145px;
 }

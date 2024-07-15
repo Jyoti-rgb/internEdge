@@ -2,12 +2,18 @@ import React from "react";
 import "./testimonial.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 
 export default function Testimonial() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Testimonial - Internedge Website</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="testimonial page-header">
-        <div className="tm-heading text-center text-light">
+        <div className="page-heading text-center text-light">
           <h1>Testimonial</h1>
         </div>
       </div>
