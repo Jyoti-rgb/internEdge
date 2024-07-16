@@ -137,7 +137,7 @@ export default function Home() {
 
       {/* About section */}
 
-      <div className="container   text-center">
+      <div className="container text-center">
         <h1>About Us</h1>
         <div className="row about">
           <div className="col-sm-6">

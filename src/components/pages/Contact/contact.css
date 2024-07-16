@@ -4,3 +4,27 @@
   color: white;
   text-align: center;
 }
+
+.set-font {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.form-floating {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 2rem 0.75rem;
+}
+
+#message {
+  height: 32vh;
+}
+.contact-info ul {
+  list-style: none;
+}
+.list-item {
+  padding: 5px;
+}
