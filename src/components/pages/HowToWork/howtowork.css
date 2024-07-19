@@ -1,0 +1,97 @@
+.work-container {
+  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+    url("./passion.jpg");
+  /* background-image: url("./passion.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: 109px;
+}
+.work h1 {
+  padding-top: 58px;
+}
+.step-container {
+  display: flex;
+  justify-content: center;
+}
+.step-list {
+  margin-top: 50px;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  display: flex;
+}
+.step-list::before {
+  content: "";
+  position: absolute;
+  height: 251%;
+  width: 8px;
+  background-color: #0b8ee9;
+  left: 77px;
+  top: 836px;
+  z-index: 0;
+}
+.dot {
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  font-size: 24px;
+  width: 43px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+  z-index: 1;
+}
+.vl {
+  border-left: 6px solid #89d989;
+  height: 70px;
+  position: relative;
+  top: 23px;
+  width: 0;
+  left: 34px;
+}
+.step-des {
+  width: 40%;
+}
+.step-content {
+  position: absolute;
+  left: 53%;
+  top: 123%;
+  color: #fff;
+  line-height: 57px;
+  width: 611px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.choose {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+.choose-left {
+  background-image: linear-gradient(40deg, black, transparent);
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-size: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.choose-right {
+  background-image: linear-gradient(40deg, #2593d0, black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+  height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.choose-right li {
+  list-style: none;
+}
