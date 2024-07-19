@@ -73,7 +73,7 @@ export default function Contact() {
               title="internedge"
               allowFullScreen
               aria-hidden="false"
-              style={{ minHeight: "475px", minWidth: "400px" }}
+              style={{ minHeight: "475px", minWidth: "350px" }}
             ></iframe>
           </div>
           <div className="col-sm-4  ">
