@@ -5,13 +5,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(120deg, #007bff, #d0314c);
-  height: 100vh;
+  height: 118vh;
   overflow: hidden;
 }
 
 .center {
   position: absolute;
-  top: 50%;
+  top: 71%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 29vw;
