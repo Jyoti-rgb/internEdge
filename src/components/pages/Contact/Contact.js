@@ -1,15 +1,17 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./contact.css";
 
 export default function Contact() {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact - Internedge Website</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Contact - Internedge Website</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      </HelmetProvider>
       <div className="contact page-header">
         <div className="page-heading  ">
           <h1>Contact Us</h1>

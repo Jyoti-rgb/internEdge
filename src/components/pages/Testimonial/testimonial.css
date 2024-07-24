@@ -1,6 +1,6 @@
 .page-header {
   background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
-    url("../carousel-1.jpg");
+    url("./carousel-1.jpg");
   height: 55vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -30,6 +30,13 @@
 .carousel-control-prev,
 .carousel-control-next {
   visibility: hidden;
+}
+.testimonial-card {
+  margin: 0 6px;
+  padding: 16px;
+  text-align: center;
+  background: var(--light);
+  transition: 0.5s;
 }
 .card-img {
   margin-bottom: 60px;

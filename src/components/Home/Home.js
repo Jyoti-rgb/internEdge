@@ -3,90 +3,69 @@ import "./home.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import skills from "./skills";
-import { Helmet } from "react-helmet";
+import Slider from "react-slick";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Home - Internedge Website</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
-      <div className="carousel-container">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="homeCarousel-img"
-              src="./images/carousel-1.jpg"
-              alt=""
-            />
-            <Carousel.Caption className="caption">
-              <h1 className="carousal-heading">
-                Welcome to Internedge - Your Pathway to Professional Success
-              </h1>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="homeCarousel-img"
-              src="./images/carousel-2.jpg"
-              alt=""
-            />
-            <Carousel.Caption>
-              <h1 className="carousal-heading">
-                Enhance Your Skills and Network
-              </h1>
-              <p className="carousal-p">
-                Boost your career with our skill development workshops and
-                networking events. Learn from industry experts, enhance your
-                professional skills, and build a robust network to support your
-                career growth.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item className="caroual-item">
-            <img
-              className="homeCarousel-img"
-              src="./images/carousel-1.jpg"
-              alt=""
-            />
-            <Carousel.Caption>
-              <h1 className="carousal-heading">
-                Personalized Mentorship for Your Growth
-              </h1>
-              <p className="carousal-p">Get Guided by Experts</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Home - Internedge Website</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      </HelmetProvider>
+      {/* Main Section */}
+      <section>
+        <div className="home">
+          <h1> Welcome to Internedge - Your Pathway to Professional Success</h1>
+          <p>
+            Boost your career with our skill development workshops and
+            networking events. Learn from industry experts, enhance your
+            professional skills, and build a robust network to support your
+            career growth.
+          </p>
+          <div className="home-btn">
+            <a className="blue" href="#">
+              Learn More
+            </a>
+            <a className="yellow" href="#">
+              Visit Course
+            </a>
+          </div>
+        </div>
+      </section>
       {/* servcie section */}
-
       <div className="container text-center">
-        <div className="service-head">
+        <div className="service">
           <h1>Services</h1>
         </div>
 
-        <div className="service">
-          <div className="row">
-            {skills.map((item) => (
-              <div key={item.id} className="col-sm-3">
-                <Card className="card">
-                  <div className="service-icon">
-                    <i class={item.icon}></i>
-                  </div>
-                  <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>{item.description}</Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-            ))}
-          </div>
+        <div className="row service">
+          {skills.map((item) => (
+            <div key={item.id} className="col-sm-3 col-md-3">
+              <Card className="skill-card">
+                <div className="service-icon">
+                  <i className={item.icon}></i>
+                </div>
+                <Card.Body>
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
         </div>
       </div>
-
       {/* Course Section*/}
       <div className="container t-b-m ">
         <div className="courses text-center">
@@ -94,39 +73,27 @@ export default function Home() {
         </div>
         <div className="row">
           <div className="col-sm-4">
-            <Card>
+            <Card className="course-card">
+              <img className="course-img" src="./images/course-1.jpg" alt="" />
               <Card.Body>
-                <img
-                  className="course-img"
-                  src="./images/course-1.jpg"
-                  alt=""
-                />
                 <h1>$149.00</h1>
                 <p>Web Design & Development Course for Beginners</p>
               </Card.Body>
             </Card>
           </div>
           <div className="col-sm-4">
-            <Card>
+            <Card className="course-card">
+              <img className="course-img" src="./images/course-2.jpg" alt="" />
               <Card.Body>
-                <img
-                  className="course-img"
-                  src="./images/course-2.jpg"
-                  alt=""
-                />
                 <h1>$149.00</h1>
                 <p>Web Design & Development Course for Beginners</p>
               </Card.Body>
             </Card>
           </div>
           <div className="col-sm-4">
-            <Card>
+            <Card className="course-card">
+              <img className="course-img" src="./images/course-3.jpg" alt="" />
               <Card.Body>
-                <img
-                  className="course-img"
-                  src="./images/course-3.jpg"
-                  alt=""
-                />
                 <h1>$149.00</h1>
                 <p>Web Design & Development Course for Beginners</p>
               </Card.Body>
@@ -134,9 +101,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* About section */}
-
       <div className="container text-center">
         <h1>About Us</h1>
         <div className="row about">

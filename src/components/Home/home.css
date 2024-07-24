@@ -4,63 +4,79 @@
   --dark: #181d38;
 }
 
-.homeCarousel-img {
-  width: 100%;
-}
-.carousel-inner {
+.home {
+  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+    url("./carousel-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-}
-.carousel-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 114.3vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the rgba values as needed */
-  z-index: 1;
-}
-.carousal-box {
-  background-color: black;
-  width: 100%;
-  height: 56.2vw;
-  opacity: 0.6;
-  position: absolute;
-  z-index: 1;
-}
-.carousal-heading {
-  position: absolute;
-  z-index: 2;
-  bottom: 80vh;
-}
-.carousal-p {
-  position: absolute;
-  z-index: 2;
-  bottom: 70vh;
-}
-.caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-/* service section */
-.service-head {
-  margin-top: 44px;
+.home h1 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
 }
+.home p {
+  width: 50%;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.home .home-btn {
+  margin-top: 30px;
+}
+.home a {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 10px;
+  text-decoration: none;
+  padding: 13px 35px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.home a.blue {
+  color: #fff;
+  background-color: rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
+.home a.blue:hover {
+  background-color: #fff;
+  color: rgb(21, 21, 100);
+}
+.home a.yellow {
+  color: #fff;
+  background-color: #fdc938;
+  transition: 0.3s ease;
+}
+.home a.yellow:hover {
+  color: #fdc938;
+  background-color: #fff;
+}
+/* service section */
+
 .service {
-  height: 66vh;
-  display: flex;
-  align-items: center;
+  margin-top: 40px;
+}
+.service-icon {
+  margin-bottom: 55px;
 }
 .service-icon i {
   color: #2593d0;
   font-size: 38px;
 }
-.card {
-  margin: 0 6px;
+.skill-card {
+  margin: 31px 6px;
   padding: 16px;
   text-align: center;
   background: var(--light);
   transition: 0.5s;
+  height: 325px;
 }
 .card:hover {
   background: var(--primary);
@@ -73,14 +89,17 @@
   margin-top: 10px;
   margin-bottom: 55px;
 }
+.course-img {
+  width: 100%;
+}
+.course-card {
+  margin: 31px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .courses {
   margin-bottom: 55px;
-}
-.course-img {
-  width: 23vw;
-  margin-left: -28px;
-  margin-bottom: 64px;
-  margin-top: -22px;
 }
 
 /* About section */

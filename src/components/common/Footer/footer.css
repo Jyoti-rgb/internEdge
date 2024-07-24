@@ -9,3 +9,7 @@
 .footer-container {
   margin: 47px auto;
 }
+.footer-btn {
+  padding: 2px;
+  background-color: red;
+}

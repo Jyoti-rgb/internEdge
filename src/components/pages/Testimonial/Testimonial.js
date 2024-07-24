@@ -2,16 +2,18 @@ import React from "react";
 import "./testimonial.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function Testimonial() {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Testimonial - Internedge Website</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Testimonial - Internedge Website</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      </HelmetProvider>
       <div className="testimonial page-header">
         <div className="page-heading text-center text-light">
           <h1>Testimonial</h1>
@@ -24,7 +26,7 @@ export default function Testimonial() {
         <div className="container-carousel">
           <Carousel id="carousel-h">
             <Carousel.Item className="flex-carousel">
-              <Card style={{ width: "18rem" }}>
+              <Card className="testimonial-card" style={{ width: "18rem" }}>
                 <div className="card-img">
                   <img src="./images/testimonial-1.jpg" alt="" />
                 </div>
@@ -39,7 +41,7 @@ export default function Testimonial() {
               </Card>
             </Carousel.Item>
             <Carousel.Item className="flex-carousel">
-              <Card style={{ width: "18rem" }}>
+              <Card className="testimonial-card " style={{ width: "18rem" }}>
                 <div className="card-img">
                   <img src="./images/testimonial-2.jpg" alt="" />
                 </div>
@@ -54,7 +56,7 @@ export default function Testimonial() {
               </Card>
             </Carousel.Item>
             <Carousel.Item className="flex-carousel">
-              <Card style={{ width: "18rem" }}>
+              <Card className="testimonial-card " style={{ width: "18rem" }}>
                 <Card.Body>
                   <div className="card-img">
                     <img src="./images/testimonial-3.jpg" alt="" />
@@ -69,7 +71,7 @@ export default function Testimonial() {
               </Card>
             </Carousel.Item>
             <Carousel.Item className="flex-carousel">
-              <Card style={{ width: "18rem" }}>
+              <Card className="testimonial-card " style={{ width: "18rem" }}>
                 <Card.Body>
                   <div className="card-img">
                     <img src="./images/testimonial-1.jpg" alt="" />

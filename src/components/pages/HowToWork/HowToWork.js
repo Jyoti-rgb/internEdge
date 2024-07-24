@@ -1,15 +1,17 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./howtowork.css";
 
 export default function HowToWork() {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>How-To-Work - Internedge Website</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>How-To-Work - Internedge Website</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      </HelmetProvider>
       <div className="page-header">
         <div className="page-heading  ">
           <h1>How To Work</h1>
@@ -20,15 +22,6 @@ export default function HowToWork() {
           <h1>How Internedge Works</h1>
         </div>
         <div className="step">
-          {/* <div className="step-content">
-            <p>
-              "Ready to transform your career? Start by creating a standout
-              profile that highlights your skills and experiences. Explore our
-              exclusive internship listings to find your perfect match. Apply
-              confidently, get shortlisted, and ace your interview. Internedge
-              is here to guide you every step of the way to success!"
-            </p>
-          </div> */}
           <div className="step-container">
             <ul>
               <li className="step-list">

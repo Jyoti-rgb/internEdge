@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import "./signup.css";
 
@@ -11,11 +11,13 @@ export default function SignUp() {
   const handleCPasswordChange = (e) => setCPassword(e.target.value);
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>SignUp - Internedge Website</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>SignUp - Internedge Website</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      </HelmetProvider>
       <div className="signup-body">
         <div className="container ">
           <div className="center">

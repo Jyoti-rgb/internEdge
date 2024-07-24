@@ -35,9 +35,9 @@ export default function Footer() {
                 opportunities, career tips, and exclusive event invites directly
                 in your inbox.
               </p>
-              <input type="text" placeholder="Your Email" />
+              <input className="p-3 m-3" type="text" placeholder="Your Email" />
               <span>
-                <input type="submit" value="Sign Up" />
+                <button className="">signup</button>
               </span>
             </div>
           </div>

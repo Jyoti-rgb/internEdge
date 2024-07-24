@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import "./login.css";
 export default function Login() {
@@ -10,11 +10,13 @@ export default function Login() {
   const handlePasswordChange = (e) => setPassword(e.target.value);
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Login - Internedge Website</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Login - Internedge Website</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      </HelmetProvider>
       <div className="login-body">
         <div className="container ">
           <div className="center">
