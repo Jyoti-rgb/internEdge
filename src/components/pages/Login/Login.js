@@ -19,7 +19,7 @@ export default function Login() {
       </HelmetProvider>
       <div className="login-body">
         <div className="container ">
-          <div className="center">
+          <div className="form-center">
             <h1>Login</h1>
             <form>
               <div className="txt_field">

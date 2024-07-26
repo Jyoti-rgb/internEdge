@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.center {
+.form-center {
   position: absolute;
   top: 71%;
   left: 50%;
@@ -18,14 +18,20 @@
   background: white;
   border-radius: 10px;
 }
+@media screen and (max-width: 600px) {
+  .form-center {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
 
-.center h1 {
+.form-center h1 {
   text-align: center;
   padding: 0 0 20px 0;
   border-bottom: 1px solid silver;
 }
 
-.center form {
+.form-center form {
   padding: 0 40px;
   box-sizing: border-box;
 }

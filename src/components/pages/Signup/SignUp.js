@@ -20,7 +20,7 @@ export default function SignUp() {
       </HelmetProvider>
       <div className="signup-body">
         <div className="container ">
-          <div className="center">
+          <div className="form-center">
             <h1>Register</h1>
             <form>
               <div className="txt_field">

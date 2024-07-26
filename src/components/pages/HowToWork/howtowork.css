@@ -1,7 +1,5 @@
 .work-container {
-  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
-    url("./passion.jpg");
-  /* background-image: url("./passion.jpg"); */
+  background: linear-gradient(rgba(41, 64, 194, 0.7), rgba(209, 221, 33, 0.7));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,45 +9,53 @@
 .work h1 {
   padding-top: 58px;
 }
-.step-container {
+
+.how-to-work {
   display: flex;
-  justify-content: center;
-}
-.step-list {
-  margin-top: 50px;
-  list-style: none;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  display: flex;
-}
-.step-list::before {
-  content: "";
-  position: absolute;
-  height: 289%;
-  width: 8px;
-  background-color: #0b8ee9;
-  left: 77px;
-  top: 777px;
-  z-index: 0;
-}
-.dot {
-  background-color: black;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  font-size: 24px;
-  width: 43px;
-  height: 43px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-right: 35px;
-  z-index: 1;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
-
-.step-des {
-  width: 40%;
+.step {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
 }
-
+.step-number {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.step-content {
+  flex-grow: 1;
+}
+.step-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #000;
+}
+.step-description {
+  margin: 0;
+  color: #555555;
+}
+/* why choose section */
 .choose {
   margin-top: 90px;
   display: flex;
@@ -61,7 +67,9 @@
   color: #fff;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 68vh;
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 2.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -73,7 +81,7 @@
   color: #fff;
   padding: 10px;
   font-size: 1.5rem;
-  height: 50vh;
+  height: 68vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .choose-right li {

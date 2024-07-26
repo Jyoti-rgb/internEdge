@@ -21,115 +21,49 @@ export default function HowToWork() {
         <div className="work text-center">
           <h1>How Internedge Works</h1>
         </div>
-        <div className="step">
-          <div className="step-container">
-            <ul>
-              <li className="step-list">
-                <div className="dot">1</div>
-                <div className="step-des">
-                  <h2> Sign Up for Free</h2>
-                  <p>
-                    Create your account on Internedge by filling out a simple
-                    registration form. Signing up is quick, easy, and completely
-                    free.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">2</div>
-                <div className="step-des">
-                  <h2>Create Your Profile</h2>
-                  <p>
-                    Complete your profile by adding your personal details,
-                    educational background, skills, and work experience. A
-                    detailed profile helps us match you with the best internship
-                    opportunities.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">3</div>
-                <div className="step-des">
-                  <h2>Explore Internship Listings</h2>
-                  <p>
-                    Browse through our exclusive internship listings from top
-                    companies across various industries. Use filters to narrow
-                    down your search by location, industry, and duration.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">4</div>
-                <div className="step-des">
-                  <h2>Apply for Internships</h2>
-                  <p>
-                    Find internships that match your interests and career goals.
-                    Submit your application directly through our platform. Make
-                    sure your resume and cover letter are tailored to the
-                    internship you are applying for.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">5</div>
-                <div className="step-des">
-                  <h2>Get Shortlisted and Interview</h2>
-                  <p>
-                    Find internships that match your interests and career goals.
-                    Submit your application directly through our platform. Make
-                    sure your resume and cover letter are tailored to the
-                    internship you are applying for.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">6</div>
-                <div className="step-des">
-                  <h2>Start Your Internship</h2>
-                  <p>
-                    Once you pass the interview, you will receive an offer
-                    letter. Begin your internship journey, gain valuable
-                    experience, and build your professional network.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">7</div>
-                <div className="step-des">
-                  <h2>Receive Ongoing Support</h2>
-                  <p>
-                    During your internship, receive support from our team to
-                    ensure a smooth and enriching experience. We provide
-                    mentorship, feedback, and guidance throughout your
-                    internship.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">8</div>
-                <div className="step-des">
-                  <h2>Complete and Get Certified</h2>
-                  <p>
-                    Successfully complete your internship and receive a
-                    certificate from Internedge. This certification will enhance
-                    your resume and make you more attractive to future
-                    employers.
-                  </p>
-                </div>
-              </li>
-              <li className="step-list">
-                <div className="dot">9</div>
-                <div className="step-des">
-                  <h2>Placement Assistance</h2>
-                  <p>
-                    After your internship, take advantage of our placement
-                    assistance services. We help you find full-time job
-                    opportunities and guide you through the job application
-                    process.
-                  </p>
-                </div>
-              </li>
-            </ul>
+        <div class="how-to-work">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-title">Sign Up for Free</div>
+              <p class="step-description">
+                Create your free account in minutes.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-title">Create Your Profile</div>
+              <p class="step-description">
+                Complete your profile to showcase your skills.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-title">Explore Listings</div>
+              <p class="step-description">
+                Browse internships tailored to your goals.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <div class="step-title">Apply</div>
+              <p class="step-description">
+                Submit applications for your chosen internships.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <div class="step-title">Get Shortlisted</div>
+              <p class="step-description">Prepare for and attend interviews.</p>
+            </div>
           </div>
         </div>
       </div>
