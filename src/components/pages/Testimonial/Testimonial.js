@@ -27,7 +27,7 @@ export default function Testimonial() {
           <Carousel id="carousel-h">
             <Carousel.Item className="flex-carousel">
               <Card className="testimonial-card" style={{ width: "18rem" }}>
-                <div className="card-img">
+                <div className="card-imgs">
                   <img src="./images/testimonial-1.jpg" alt="" />
                 </div>
                 <Card.Body>
@@ -42,7 +42,7 @@ export default function Testimonial() {
             </Carousel.Item>
             <Carousel.Item className="flex-carousel">
               <Card className="testimonial-card " style={{ width: "18rem" }}>
-                <div className="card-img">
+                <div className="card-imgs">
                   <img src="./images/testimonial-2.jpg" alt="" />
                 </div>
                 <Card.Body>
@@ -58,7 +58,7 @@ export default function Testimonial() {
             <Carousel.Item className="flex-carousel">
               <Card className="testimonial-card " style={{ width: "18rem" }}>
                 <Card.Body>
-                  <div className="card-img">
+                  <div className="card-imgs">
                     <img src="./images/testimonial-3.jpg" alt="" />
                   </div>
                   <Card.Title>Client Name</Card.Title>
@@ -73,7 +73,7 @@ export default function Testimonial() {
             <Carousel.Item className="flex-carousel">
               <Card className="testimonial-card " style={{ width: "18rem" }}>
                 <Card.Body>
-                  <div className="card-img">
+                  <div className="card-imgs">
                     <img src="./images/testimonial-1.jpg" alt="" />
                   </div>
                   <Card.Title>Client Name</Card.Title>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
@@ -38,9 +39,9 @@ export default function Home() {
             <a className="blue" href="#">
               Learn More
             </a>
-            <a className="yellow" href="#">
+            <Link to="/course" className="yellow">
               Visit Course
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -66,18 +67,27 @@ export default function Home() {
           ))}
         </div>
       </div>
+
       {/* Course Section*/}
       <div className="container t-b-m ">
         <div className="courses text-center">
-          <h1>Popular Courses</h1>
+          <h1>Our Popular Courses</h1>
         </div>
         <div className="row">
           <div className="col-sm-4">
             <Card className="course-card">
               <img className="course-img" src="./images/course-1.jpg" alt="" />
               <Card.Body>
-                <h1>$149.00</h1>
-                <p>Web Design & Development Course for Beginners</p>
+                <h3>₹499.00</h3>
+                <p>Javascript for Beginners</p>
+                <div className="star">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span> (259)</span>
+                </div>
               </Card.Body>
             </Card>
           </div>
@@ -85,8 +95,16 @@ export default function Home() {
             <Card className="course-card">
               <img className="course-img" src="./images/course-2.jpg" alt="" />
               <Card.Body>
-                <h1>$149.00</h1>
-                <p>Web Design & Development Course for Beginners</p>
+                <h3>₹699.00</h3>
+                <p>HTML & CSS from Beginners to Advance </p>
+                <div className="star">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span> (400)</span>
+                </div>
               </Card.Body>
             </Card>
           </div>
@@ -94,8 +112,16 @@ export default function Home() {
             <Card className="course-card">
               <img className="course-img" src="./images/course-3.jpg" alt="" />
               <Card.Body>
-                <h1>$149.00</h1>
-                <p>Web Design & Development Course for Beginners</p>
+                <h3>₹899.00</h3>
+                <p>Frontend Developer </p>
+                <div className="star">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span> (230)</span>
+                </div>
               </Card.Body>
             </Card>
           </div>

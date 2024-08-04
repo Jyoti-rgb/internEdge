@@ -23,24 +23,22 @@ export default function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/internship">Internship</Link>
+                <Link to="/course">Courses</Link>
               </li>
               <li>
                 <Link to="/how-to-work">How-to-work</Link>
               </li>
+
               <li>
                 <Link to="/testimonial">Testimonials</Link>
               </li>
               <li>
                 <Link to="/contact">Contact Us</Link>
               </li>
-              <li>
-                <Link to="/signup">Sign Up</Link>
-              </li>
             </ul>
           </div>
           <div className="button">
-            <Link to="/signin">
+            <Link to="/signup">
               <button className="btn1">
                 <i className="fa fa-sign-out"></i>Sign Up
               </button>

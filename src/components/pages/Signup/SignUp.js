@@ -2,13 +2,26 @@ import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import "./signup.css";
+import axios from "axios";
 
 export default function SignUp() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cpassword, setCPassword] = useState("");
 
-  const handlePasswordChange = (e) => setPassword(e.target.value);
-  const handleCPasswordChange = (e) => setCPassword(e.target.value);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:5000/signup", {
+        name,
+        email,
+        password,
+        cpassword,
+      })
+      .then((result) => console.log(result))
+      .catch((err) => console.log(err));
+  };
   return (
     <>
       <HelmetProvider>
@@ -22,14 +35,28 @@ export default function SignUp() {
         <div className="container ">
           <div className="form-center">
             <h1>Register</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="txt_field">
-                <input type="text" name="name" required />
+                <input
+                  type="text"
+                  name="name"
+                  value={name}
+                  required
+                  autoComplete="name"
+                  onChange={(e) => setName(e.target.value)}
+                />
                 <span></span>
                 <label>Name</label>
               </div>
               <div className="txt_field">
-                <input type="email" name="email" required />
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  required
+                  autoComplete="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
                 <span></span>
                 <label>Email</label>
               </div>
@@ -37,7 +64,9 @@ export default function SignUp() {
                 <input
                   type="password"
                   name="password"
-                  onChange={handlePasswordChange}
+                  value={password}
+                  autoComplete="new-password"
+                  onChange={(e) => setPassword(e.target.value)}
                   required
                 />
                 <span></span>
@@ -47,15 +76,17 @@ export default function SignUp() {
                 <input
                   type="password"
                   name="cpassword"
+                  value={cpassword}
                   required
-                  onChange={handleCPasswordChange}
+                  autoComplete="new-password"
+                  onChange={(e) => setCPassword(e.target.value)}
                 />
                 <span></span>
                 <label>Confirm Password</label>
               </div>
               <input name="submit" type="Submit" value="Sign Up" />
               <div className="signup_link">
-                Have an Account ?<Link to="/login">Login Here</Link>
+                Already have an account ?<Link to="/login">Login Here</Link>
               </div>
             </form>
           </div>

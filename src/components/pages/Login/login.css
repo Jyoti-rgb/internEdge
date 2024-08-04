@@ -20,8 +20,8 @@
 }
 @media screen and (max-width: 600px) {
   .form-center {
-    width: 72%;
-    left: 38%;
+    width: 80%;
+    left: 50%;
   }
 }
 .form-centerh1 {

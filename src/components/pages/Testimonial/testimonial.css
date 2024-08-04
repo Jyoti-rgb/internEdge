@@ -34,14 +34,15 @@
 .testimonial-card {
   margin: 0 6px;
   padding: 16px;
+  height: 80vh;
   text-align: center;
   background: var(--light);
   transition: 0.5s;
 }
-.card-img {
-  margin-bottom: 60px;
+.card-imgs {
+  margin-bottom: 20px;
 }
-.card-img img {
+.card-imgs img {
   border-radius: 50%;
 }
 

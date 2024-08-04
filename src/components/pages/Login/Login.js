@@ -5,9 +5,6 @@ import "./login.css";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const handleEmailChange = (e) => setEmail(e.target.value);
-  const handlePasswordChange = (e) => setPassword(e.target.value);
   return (
     <>
       <HelmetProvider>
@@ -28,7 +25,7 @@ export default function Login() {
                   name="email"
                   required
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <span></span>
                 <label>Email</label>
@@ -40,7 +37,7 @@ export default function Login() {
                   required
                   autoComplete="current-password"
                   value={password}
-                  onChange={handlePasswordChange}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <span></span>
                 <label>Password</label>
@@ -48,7 +45,8 @@ export default function Login() {
 
               <input name="submit" type="Submit" value="Login" />
               <div className="signup_link">
-                Have an Account ?<Link to="/signup">Create Account Here</Link>
+                Don't have an account?
+                <Link to="/signup">Signup</Link>
               </div>
             </form>
           </div>
